@@ -28,7 +28,7 @@ return packer.startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-	use("ayu-theme/ayu-vim") -- Colorscheme
+	use("sainnhe/sonokai") -- Colorscheme
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 

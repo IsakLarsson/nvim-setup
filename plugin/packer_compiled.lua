@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
-  ["ayu-vim"] = {
-    loaded = true,
-    path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/ayu-vim",
-    url = "https://github.com/ayu-theme/ayu-vim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -205,6 +200,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  sonokai = {
+    loaded = true,
+    path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/sonokai",
+    url = "https://github.com/sainnhe/sonokai"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
