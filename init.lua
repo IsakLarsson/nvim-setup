@@ -14,6 +14,3 @@ require("larsson.plugins.lsp.null-ls")
 require("larsson.plugins.autopairs")
 require("larsson.plugins.treesitter")
 require("larsson.plugins.gitsigns")
-require("tokyonight").setup({
-	style = "day",
-})
