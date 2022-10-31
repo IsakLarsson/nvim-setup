@@ -201,11 +201,6 @@ _G.packer_plugins = {
     path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  sonokai = {
-    loaded = true,
-    path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/sonokai",
-    url = "https://github.com/sainnhe/sonokai"
-  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -215,6 +210,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["typescript.nvim"] = {
     loaded = true,
