@@ -9,7 +9,7 @@ keymap.set("n", "<leader>w", "<C-w>w")
 
 keymap.set("n", "<leader>sw", ":w<CR>")
 
-keymap.set("i", "==", "=>{}<ESC>i")
+keymap.set("i", "jkl", "() => {}<ESC>i")
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
