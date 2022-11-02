@@ -10,7 +10,6 @@ local ensure_packer = function()
 end
 
 local packer_bootstrap = ensure_packer()
-
 -- Autocommand to reload Neovim whenever file is saved
 vim.cmd([[
   augroup packer_user_config

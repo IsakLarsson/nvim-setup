@@ -9,7 +9,10 @@ keymap.set("n", "<leader>w", "<C-w>w")
 
 keymap.set("n", "<leader>sw", ":w<CR>")
 
-keymap.set("i", "jkl", "() => {}<ESC>i")
+keymap.set("i", "jkl", "() => {}<ESC>i") --stupid but fast as shit arrow functions
+
+keymap.set("n", "U", "<C-r>") --Redo
+keymap.set("n", "Q", "@q") -- Quickly execute q macro
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
