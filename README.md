@@ -17,4 +17,4 @@ My NeoVim config, a work in progress.
 - Easy commenting and replace with register
 - Tmux navigation with vim-tmux-navigator
 
-![Screenshot](https://ibb.co/w6H7FPX)
+![Screenshot](https://i.ibb.co/12VMtP5/Screenshot-2022-11-03-at-10-01-06.png)
