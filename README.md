@@ -16,3 +16,5 @@ My NeoVim config, a work in progress.
 - Easy surround with vim-surround
 - Easy commenting and replace with register
 - Tmux navigation with vim-tmux-navigator
+
+![Screenshot](https://ibb.co/w6H7FPX)
