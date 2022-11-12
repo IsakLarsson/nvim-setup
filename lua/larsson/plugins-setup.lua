@@ -37,6 +37,9 @@ return packer.startup(function(use)
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
 	use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
+	--Minimap
+	use("wfxr/minimap.vim")
+
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
 
@@ -85,7 +88,7 @@ return packer.startup(function(use)
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
-	use("p00f/nvim-ts-rainbow")
+	use("p00f/nvim-ts-rainbow") --For colorizing bracket pairs and such
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
