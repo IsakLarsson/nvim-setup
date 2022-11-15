@@ -1,5 +1,6 @@
 local opt = vim.opt -- for conciseness
 
+opt.confirm = true
 -- line numbers
 opt.relativenumber = true
 opt.number = true
@@ -21,7 +22,7 @@ opt.incsearch = true
 opt.hlsearch = false
 -- cursor line
 opt.cursorline = true
-
+opt.showtabline = 2
 -- appearance
 opt.termguicolors = true
 opt.background = "dark"

@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -148,11 +153,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["minimap.vim"] = {
-    loaded = true,
-    path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/minimap.vim",
-    url = "https://github.com/wfxr/minimap.vim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -221,11 +221,6 @@ _G.packer_plugins = {
     path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
   ["typescript.nvim"] = {
     loaded = true,
     path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/typescript.nvim",
@@ -240,6 +235,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/vim-maximizer",
     url = "https://github.com/szw/vim-maximizer"
+  },
+  ["vim-nightfly-colors"] = {
+    loaded = true,
+    path = "/Users/isakamanlarsson/.local/share/nvim/site/pack/packer/start/vim-nightfly-colors",
+    url = "https://github.com/bluz71/vim-nightfly-colors"
   },
   ["vim-surround"] = {
     loaded = true,

@@ -26,8 +26,9 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
-
-	use("folke/tokyonight.nvim") -- Colorscheme
+	use("lukas-reineke/indent-blankline.nvim") --indent helpers
+	-- use("folke/tokyonight.nvim") -- Colorscheme
+	use("bluz71/vim-nightfly-colors")
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
@@ -38,7 +39,7 @@ return packer.startup(function(use)
 	use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
 	--Minimap
-	use("wfxr/minimap.vim")
+	-- use("wfxr/minimap.vim")
 
 	-- commenting with gc
 	use("numToStr/Comment.nvim")

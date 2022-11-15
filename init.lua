@@ -20,3 +20,8 @@ require("larsson.plugins.lsp.null-ls")
 require("larsson.plugins.autopairs")
 require("larsson.plugins.treesitter")
 require("larsson.plugins.gitsigns")
+require("indent_blankline").setup({
+	-- space_char_blankline = " ",
+	-- show_current_context = true,
+	-- show_current_context_start = true,
+})
