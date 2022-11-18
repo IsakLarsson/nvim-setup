@@ -31,9 +31,10 @@ return packer.startup(function(use)
 	use("bluz71/vim-nightfly-colors")
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
-
+	use("glepnir/dashboard-nvim")
 	use("szw/vim-maximizer") -- maximizes and restores current window
-	use("ThePrimeagen/vim-be-good")
+	-- use("ThePrimeagen/vim-be-good")
+
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
 	use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
@@ -88,6 +89,11 @@ return packer.startup(function(use)
 		run = function()
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
+	})
+	-- tabline plugin
+	use({
+		"romgrk/barbar.nvim",
+		requires = { "kyazdani42/nvim-web-devicons" },
 	})
 	use("p00f/nvim-ts-rainbow") --For colorizing bracket pairs and such
 	-- auto closing

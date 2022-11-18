@@ -22,7 +22,7 @@ require("nvim-tree").setup({
 		enable = true,
 	},
 	filters = {
-		custom = { "^\\.git" },
+		-- custom = { "^\\.git" },
 		dotfiles = false,
 	},
 })
