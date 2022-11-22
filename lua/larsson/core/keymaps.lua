@@ -6,11 +6,11 @@ local keymap = vim.keymap
 -- General Keymaps
 ---------------------
 keymap.set("n", "<leader>w", "<C-w>w")
+-- keymap.set("i", "jk", "<Esc>")
 
 keymap.set("n", "<leader>sw", ":w<CR>")
 
 keymap.set("i", "jkl", "() => {}<ESC>i") --stupid but fast as shit arrow functions
-
 keymap.set("i", "sdf", "={}<ESC>i") --stupid but fast as shit = brackets while in insert
 keymap.set("n", "ö", ";")
 keymap.set("n", "Ö", ",")
@@ -48,6 +48,9 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window max
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 
 -- telescope
+keymap.set("n", "<leader>ch", "<cmd>Telescope command_history<cr>") -- find function names, variables from treesitter
+keymap.set("n", "<leader>ft", "<cmd>Telescope treesitter<cr>") -- find function names, variables from treesitter
+keymap.set("n", "<leader>reg", "<cmd>Telescope registers<cr>") -- find entries in register and paste with <cr>
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory

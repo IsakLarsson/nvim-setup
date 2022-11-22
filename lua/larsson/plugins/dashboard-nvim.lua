@@ -29,6 +29,9 @@ local home = os.getenv("HOME")
 -- 	"                                                                                                  ",
 -- }
 db.custom_header = {
+	"                                                       ",
+	"                                                       ",
+	"                                                       ",
 	"                     __---__                           ",
 	"                    -       _--______                  ",
 	"               _--( /     / )XXXXXXXXXXXXX_            ",
@@ -48,9 +51,6 @@ db.custom_header = {
 	"             --XXXXXXX---------------  XXXXX--         ",
 	"                /XXXXXXXXXXXXXXXXXXXXXXXX-             ",
 	"                  --XXXXXXXXXXXXXXXXXX-                ",
-	"                                                       ",
-	"                                                       ",
-	"                                                       ",
 	"                                                       ",
 	"                                                       ",
 	"                                                       ",

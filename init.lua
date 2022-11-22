@@ -19,8 +19,10 @@ require("larsson.plugins.autopairs")
 require("larsson.plugins.treesitter")
 require("larsson.plugins.dashboard-nvim")
 require("larsson.plugins.gitsigns")
+require("leap").add_default_mappings()
 require("indent_blankline").setup({
 	-- space_char_blankline = " ",
 	-- show_current_context = true,
 	-- show_current_context_start = true,
 })
+require("scrollbar").setup()
