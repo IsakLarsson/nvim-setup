@@ -6,11 +6,11 @@ local keymap = vim.keymap
 -- General Keymaps
 ---------------------
 keymap.set("n", "<leader>w", "<C-w>w")
+-- keymap.set("i", "jk", "<Esc>")
 
 keymap.set("n", "<leader>sw", ":w<CR>")
 
 keymap.set("i", "jkl", "() => {}<ESC>i") --stupid but fast as shit arrow functions
-
 keymap.set("i", "sdf", "={}<ESC>i") --stupid but fast as shit = brackets while in insert
 keymap.set("n", "ö", ";")
 keymap.set("n", "Ö", ",")

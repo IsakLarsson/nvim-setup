@@ -24,7 +24,6 @@ if not status then
 end
 return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
-
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 	use("lukas-reineke/indent-blankline.nvim") --indent helpers
 	-- use("folke/tokyonight.nvim") -- Colorscheme
@@ -39,9 +38,10 @@ return packer.startup(function(use)
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
 	use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
-	--Minimap
-	-- use("wfxr/minimap.vim")
+	use("petertriho/nvim-scrollbar") -- Scrollbar
 
+	--Motion with Leap
+	use("ggandor/leap.nvim")
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
 
@@ -101,8 +101,14 @@ return packer.startup(function(use)
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
 	-- git integration
-	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
+	use({
+		"lewis6991/gitsigns.nvim",
+		config = function()
+			require("gitsigns").setup()
+			require("scrollbar.handlers.gitsigns").setup()
+		end,
+	})
 	if packer_boostrap then
 		require("packer").sync()
 	end
