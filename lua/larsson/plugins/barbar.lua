@@ -21,6 +21,7 @@ end)
 
 require("bufferline").setup({
 	auto_hide = true,
+	animation = false,
 })
 -- Move to previous/next
 -- map("n", "<C-n>", "<Cmd>BufferPrevious<CR>", opts)

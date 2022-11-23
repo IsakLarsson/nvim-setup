@@ -48,7 +48,7 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window max
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 
 -- telescope
-keymap.set("n", "<leader>ch", "<cmd>Telescope command_history<cr>") -- find function names, variables from treesitter
+keymap.set("n", "<leader>ch", "<cmd>Telescope command_history<cr>") -- List command history
 keymap.set("n", "<leader>ft", "<cmd>Telescope treesitter<cr>") -- find function names, variables from treesitter
 keymap.set("n", "<leader>reg", "<cmd>Telescope registers<cr>") -- find entries in register and paste with <cr>
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
