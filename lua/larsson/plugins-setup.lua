@@ -28,7 +28,7 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim") --indent helpers
 	-- use("folke/tokyonight.nvim") -- Colorscheme
 	use("bluz71/vim-nightfly-colors")
-
+	use("norcalli/nvim-colorizer.lua") -- Color highlighter
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 	use("glepnir/dashboard-nvim")
 	use("szw/vim-maximizer") -- maximizes and restores current window

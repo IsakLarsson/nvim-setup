@@ -82,6 +82,12 @@ lspconfig["tailwindcss"].setup({
 	on_attach = on_attach,
 })
 
+--configure Googles Go lsp server
+require("lspconfig").gopls.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 -- configure lua server (with special settings)
 lspconfig["sumneko_lua"].setup({
 	capabilities = capabilities,
