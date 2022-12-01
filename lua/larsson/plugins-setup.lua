@@ -27,6 +27,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 	use("lukas-reineke/indent-blankline.nvim") --indent helpers
 	-- use("folke/tokyonight.nvim") -- Colorscheme
+	use({ "ellisonleao/gruvbox.nvim" })
 	use("bluz71/vim-nightfly-colors")
 	use("norcalli/nvim-colorizer.lua") -- Color highlighter
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
@@ -44,8 +45,8 @@ return packer.startup(function(use)
 	})
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
 	use("tpope/vim-fugitive")
-	use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
+	use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 	use("petertriho/nvim-scrollbar") -- Scrollbar
 
 	--Motion with Leap

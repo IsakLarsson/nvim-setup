@@ -2,7 +2,7 @@
 
 My NeoVim config, a work in progress.
 
--   Nightfly theme
+-   Nightfly and Gruvbox theme
 -   File navigation with nvim-tree.lua
 -   Indent lines
 -   Icons with nvim-web-devicons

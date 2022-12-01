@@ -83,7 +83,7 @@ lspconfig["tailwindcss"].setup({
 })
 
 --configure Googles Go lsp server
-require("lspconfig").gopls.setup({
+lspconfig.gopls.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
