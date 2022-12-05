@@ -21,3 +21,4 @@ My NeoVim config, a work in progress.
 -   Smooth buffer tabs navigation with barbar
 
 ![Screenshot](https://i.ibb.co/5c3vBbH/Editormin.png)
+![Screenshot2](https://i.ibb.co/6NjDDP3/colortheme2.png)
