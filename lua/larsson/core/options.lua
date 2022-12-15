@@ -28,7 +28,7 @@ opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 opt.syntax = "ON"
-
+opt.showmode = false
 -- backspace
 opt.backspace = "indent,eol,start"
 

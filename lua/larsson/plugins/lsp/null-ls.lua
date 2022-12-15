@@ -19,19 +19,19 @@ null_ls.setup({
 		--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
 		-- formatting.prettier, -- js/ts formatter
 		formatting.prettier.with({
-			extra_args = {
+			--[[ extra_args = {
 				"--no-semi",
 				"--single-quote",
 				"--jsx-single-quote",
 				"--tab-width=4",
-			},
+			}, ]]
 		}),
 		formatting.stylua, -- lua formatter
 		formatting.gofmt, --go formatter
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js
 			condition = function(utils)
-				return utils.root_has_file(".eslintrc.js") -- change file extension to use something else
+				return utils.root_has_file(".eslintrc.js") -- change file extension to use somethi[  ]ng else
 			end,
 		}),
 	},
