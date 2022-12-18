@@ -6,8 +6,6 @@ local keymap = vim.keymap
 -- General Keymaps
 ---------------------
 keymap.set("n", "<leader>w", "<C-w>w")
--- keymap.set("i", "jk", "<Esc>")
-
 keymap.set("n", "<leader>sw", ":w<CR>")
 
 keymap.set("i", "jkl", "() => {}<ESC>i") --stupid but fast as shit arrow functions
@@ -17,10 +15,17 @@ keymap.set("i", "<C-l>", "}")
 keymap.set("i", "<C-d>", "[]<ESC>i")
 keymap.set("i", "<C-f>", "]")
 
-keymap.set("n", "ö", ";")
 keymap.set("n", "Ö", ",")
+keymap.set("n", "ö", ";")
 keymap.set("n", "U", "<C-r>") --Redo
 keymap.set("n", "Q", "@q") -- Quickly execute q macro
+
+keymap.set("n", "<C-d>", "<C-d>zz") --Keep code centered when scrolling with ctrl d and u
+keymap.set("n", "<C-u>", "<C-u>zz")
+
+keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- Moving code up and down
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
