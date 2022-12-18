@@ -57,6 +57,14 @@ return packer.startup(function(use)
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
 
+	-- Terminal smoothness
+	use({
+		"akinsho/toggleterm.nvim",
+		tag = "*",
+		config = function()
+			require("toggleterm").setup()
+		end,
+	})
 	-- vs-code like icons
 	use("kyazdani42/nvim-web-devicons")
 

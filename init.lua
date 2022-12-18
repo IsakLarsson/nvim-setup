@@ -20,6 +20,7 @@ require("larsson.plugins.autopairs")
 require("larsson.plugins.treesitter")
 require("larsson.plugins.dashboard-nvim")
 require("larsson.plugins.gitsigns")
+require("larsson.plugins.toggleterm")
 require("leap").add_default_mappings()
 require("indent_blankline").setup({
 	-- space_char_blankline = " ",
