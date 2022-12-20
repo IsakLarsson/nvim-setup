@@ -32,3 +32,10 @@ require("colorizer").setup({
 	"*", -- Highlight all files, but customize some others.
 	css = { rgb_fn = true }, -- Enable parsing rgb(...) functions in css.
 })
+local signature_config = {
+	-- log_path = vim.fn.expand("$home") .. "/tmp/sig.log",
+	-- debug = true,
+	hint_enable = false,
+	-- max_width = 80,
+}
+require("lsp_signature").setup(signature_config)
