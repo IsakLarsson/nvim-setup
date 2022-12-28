@@ -26,6 +26,8 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- Moving code up and down
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 
+keymap.set("n", "<leader>ut", ":UndotreeToggle<CR>")
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 

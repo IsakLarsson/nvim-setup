@@ -98,8 +98,9 @@ return packer.startup(function(use)
 	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
+
 	use({
-		"ray-x/lsp_signature.nvim",
+		"ray-x/lsp_signature.nvim", -- Function signatures
 	})
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
@@ -123,7 +124,7 @@ return packer.startup(function(use)
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
 	-- git integration
-
+	use("mbbill/undotree")
 	use({
 		"lewis6991/gitsigns.nvim",
 		config = function()
