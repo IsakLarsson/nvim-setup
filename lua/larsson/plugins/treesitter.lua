@@ -15,7 +15,9 @@ treesitter.setup({
 		extended_mode = true,
 		max_file_lines = nil,
 	},
-
+	context_commentstring = {
+		enable = true,
+	},
 	-- enable indentation
 	indent = { enable = true },
 	-- enable autotagging (w/ nvim-ts-autotag plugin)

@@ -25,17 +25,12 @@ end
 return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
-	use("lukas-reineke/indent-blankline.nvim") --indent helpers
-	-- use("folke/tokyonight.nvim") -- Colorscheme
+
+	------ COLORSCHEMES ------
 	use({ "ellisonleao/gruvbox.nvim" })
 	use("bluz71/vim-nightfly-colors")
-	use("norcalli/nvim-colorizer.lua") -- Color highlighter
-	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
-	use("glepnir/dashboard-nvim")
-	use("szw/vim-maximizer") -- maximizes and restores current window
-	-- use("ThePrimeagen/vim-be-good")
 
-	-- essential plugins
+	------ ESSENTIALS ------
 	use({
 		"akinsho/git-conflict.nvim",
 		tag = "*",
@@ -47,17 +42,19 @@ return packer.startup(function(use)
 	use("tpope/vim-fugitive")
 
 	use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
-	use("petertriho/nvim-scrollbar") -- Scrollbar
+	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
-	--Motion with Leap
-	use("ggandor/leap.nvim")
-	-- commenting with gc
-	use("numToStr/Comment.nvim")
+	------ MOVEMENT ------
+	use("ggandor/leap.nvim") --Motion with Leap
 
-	-- file explorer
+	------ COMMENTING ------
+	use("numToStr/Comment.nvim") -- commenting with gc
+	use("JoosepAlviste/nvim-ts-context-commentstring") -- context aware commenting
+
+	------ FILETREE ------
 	use("nvim-tree/nvim-tree.lua")
 
-	-- Terminal smoothness
+	-------- TERMINAL --------
 	use({
 		"akinsho/toggleterm.nvim",
 		tag = "*",
@@ -65,29 +62,25 @@ return packer.startup(function(use)
 			require("toggleterm").setup()
 		end,
 	})
-	-- vs-code like icons
-	use("kyazdani42/nvim-web-devicons")
 
-	-- statusline
-	use("nvim-lualine/lualine.nvim")
-
-	--DEBUGGING
+	-------- DEBUGGING --------
 	-- use("mfussenegger/nvim-dap")
 
 	-- fuzzy finding w/ telescope
-	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 
-	-- autocompletion
+	-------- AUTOCOMPLETION --------
 	use("hrsh7th/nvim-cmp") -- completion plugin
 	use("hrsh7th/cmp-buffer") -- source for text in buffer
 	use("hrsh7th/cmp-path") -- source for file system paths
 
-	-- snippets
+	-------- SNIPPETS --------
 	use("L3MON4D3/LuaSnip") -- snippet engine
 	use("saadparwaiz1/cmp_luasnip") -- for autocompletion
 	use("rafamadriz/friendly-snippets") -- useful snippets
 
+	-------- LSP --------
 	-- managing & installing lsp servers, linters & formatters
 	use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
 	use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
@@ -113,18 +106,24 @@ return packer.startup(function(use)
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
-	-- tabline plugin
+
+	-------- UTILITY --------
 	use({
 		"romgrk/barbar.nvim",
 		requires = { "kyazdani42/nvim-web-devicons" },
-	})
+	}) -- tabline plugin
 	use("p00f/nvim-ts-rainbow") --For colorizing bracket pairs and such
-	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
-	-- git integration
+	use("norcalli/nvim-colorizer.lua") -- Color highlighter
+	use("kyazdani42/nvim-web-devicons") -- vs-code like icons
+	use("nvim-lualine/lualine.nvim") -- statusline
 	use("mbbill/undotree")
+	use("glepnir/dashboard-nvim")
+	use("lukas-reineke/indent-blankline.nvim") --indent helpers
+	use("szw/vim-maximizer") -- maximizes and restores current window
+	use("petertriho/nvim-scrollbar") -- Scrollbar
 	use({
 		"lewis6991/gitsigns.nvim",
 		config = function()
