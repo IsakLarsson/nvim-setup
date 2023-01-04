@@ -6,6 +6,7 @@ opt.relativenumber = true
 opt.number = true
 opt.scrolloff = 10
 
+opt.fillchars = "eob: "
 -- tabs & indentation
 opt.tabstop = 4
 opt.shiftwidth = 4
