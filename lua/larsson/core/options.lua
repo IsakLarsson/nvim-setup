@@ -1,5 +1,6 @@
 local opt = vim.opt -- for conciseness
 
+opt.undofile = true
 opt.confirm = true
 -- line numbers
 opt.relativenumber = true

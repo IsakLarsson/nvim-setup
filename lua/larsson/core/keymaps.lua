@@ -15,8 +15,8 @@ keymap.set("i", "<C-l>", "}")
 keymap.set("i", "<C-d>", "[]<ESC>i")
 keymap.set("i", "<C-f>", "]")
 
-keymap.set("n", "Ö", ",")
-keymap.set("n", "ö", ";")
+keymap.set("n", "Ä", ",")
+keymap.set("n", "ä", ";")
 keymap.set("n", "U", "<C-r>") --Redo
 keymap.set("n", "Q", "@q") -- Quickly execute q macro
 
