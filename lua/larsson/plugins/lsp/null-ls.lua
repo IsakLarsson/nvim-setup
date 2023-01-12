@@ -21,13 +21,13 @@ null_ls.setup({
 		formatting.prettier.with({}), -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		formatting.gofmt, --go formatter
-		diagnostics.eslint_d.with({ -- js/ts linter
+		diagnostics.eslint.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js
 			--[[ condition = function(utils)
 				return utils.root_has_file(".eslintrc.js") -- change file extension to use something else
 			end, ]]
 		}),
-		code_actions.eslint_d, -- Enables code actions for eslint_d
+		code_actions.eslint, -- Enables code actions for eslint
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)

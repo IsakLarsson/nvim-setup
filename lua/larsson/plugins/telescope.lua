@@ -25,6 +25,16 @@ telescope.setup({
 			},
 		},
 	},
+	extensions = {
+		undo = {
+			side_by_side = true,
+			layout_strategy = "horizontal",
+			layout_config = {
+				preview_width = 0.7,
+			},
+		},
+	},
 })
 
 telescope.load_extension("fzf")
+telescope.load_extension("undo")

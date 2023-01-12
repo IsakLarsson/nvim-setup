@@ -120,6 +120,7 @@ return packer.startup(function(use)
 	use("kyazdani42/nvim-web-devicons") -- vs-code like icons
 	use("nvim-lualine/lualine.nvim") -- statusline
 	use("mbbill/undotree")
+	use("debugloop/telescope-undo.nvim")
 	use("glepnir/dashboard-nvim")
 	use("lukas-reineke/indent-blankline.nvim") --indent helpers
 	use("szw/vim-maximizer") -- maximizes and restores current window
