@@ -33,6 +33,8 @@ return packer.startup(function(use)
 		requires = { "nvim-treesitter/nvim-treesitter", opt = true },
 	})
 
+	use("eddyekofo94/gruvbox-flat.nvim")
+
 	------ ESSENTIALS ------
 	use({
 		"akinsho/git-conflict.nvim",
@@ -150,6 +152,8 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim") --indent helpers
 	use("szw/vim-maximizer") -- maximizes and restores current window
 	use("petertriho/nvim-scrollbar") -- Scrollbar
+	use("ThePrimeagen/harpoon")
+
 	use({
 		"lewis6991/gitsigns.nvim",
 		config = function()

@@ -2,18 +2,17 @@
 vim.g.nightflyCursorColor = true
 vim.g.nightflyWinSeparator = 2
 
+vim.g.gruvbox_flat_style = "hard"
 vim.o.background = "dark"
--- local status, _ = pcall(vim.cmd, "colorscheme tokyonight")
--- if not status then
--- 	print("Colorscheme is not found!")
--- 	return
--- end
--- vim.cmd("colorscheme tokyonight-night")
--- vim.cmd([[colorscheme nighfly]])
-require("gruvbox").setup({
+local dark = "#1d2021"
+--[[ require("gruvbox").setup({
 
 	palette_overrides = {
-		dark0 = "#1d2021",
+		dark0 = dark,
 	},
-})
-vim.cmd([[colorscheme gruvbox]])
+	overrides = {
+		SignColumn = { bg = dark },
+	},
+}) ]]
+-- vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[colorscheme gruvbox-flat]])
