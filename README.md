@@ -14,7 +14,7 @@ My NeoVim config, a work in progress.
 - Autoclosing braces and html tags with nvim-autopairs
 - Useful snippets with friendly snippets + LuaSnip.
 - Hot status line with Lualine
-- Easy surround with vim-surround
+- Easy surround with nvim-surround
 - Easy commenting and replace with register
 - Tmux navigation with vim-tmux-navigator
 - Slick landing page

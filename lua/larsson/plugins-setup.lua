@@ -25,10 +25,13 @@ end
 return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
-
 	------ COLORSCHEMES ------
 	use({ "ellisonleao/gruvbox.nvim" })
 	use("bluz71/vim-nightfly-colors")
+	use({
+		"glepnir/zephyr-nvim",
+		requires = { "nvim-treesitter/nvim-treesitter", opt = true },
+	})
 
 	------ ESSENTIALS ------
 	use({
@@ -38,8 +41,14 @@ return packer.startup(function(use)
 			require("git-conflict").setup()
 		end,
 	})
-	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
 	use("tpope/vim-fugitive")
+	use({ --Lua fork of tpope's vim-surround
+		"kylechui/nvim-surround",
+		tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+		config = function()
+			require("nvim-surround").setup()
+		end,
+	})
 
 	use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
@@ -88,7 +97,22 @@ return packer.startup(function(use)
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig") -- easily configure language servers
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
+	use({
+		"glepnir/lspsaga.nvim",
+		branch = "main",
+		config = function()
+			require("lspsaga").setup({
+
+				ui = {
+					border = "single",
+					colors = {
+						--float window normal background color
+						normal_bg = "#1a1a1a",
+					},
+				},
+			})
+		end,
+	})
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
@@ -116,6 +140,7 @@ return packer.startup(function(use)
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
+	use("rcarriga/nvim-notify")
 	use("norcalli/nvim-colorizer.lua") -- Color highlighter
 	use("kyazdani42/nvim-web-devicons") -- vs-code like icons
 	use("nvim-lualine/lualine.nvim") -- statusline
