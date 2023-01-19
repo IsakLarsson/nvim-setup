@@ -4,7 +4,7 @@ vim.g.nightflyWinSeparator = 2
 
 vim.g.gruvbox_flat_style = "hard"
 vim.o.background = "dark"
-local dark = "#1d2021"
+-- local dark = "#1d2021"
 --[[ require("gruvbox").setup({
 
 	palette_overrides = {
