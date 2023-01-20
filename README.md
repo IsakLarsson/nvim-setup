@@ -2,11 +2,11 @@
 
 My NeoVim config, a work in progress, always changing and evolving.
 
-##Requirements
+## Requirements
 - Lazygit probably, don't know if it crashes if you don't have it
 - Fzf also maybe 
 
-##Features
+## Features
 - Nightfly Gruvbox, and Gruvbox-flat theme
 - File navigation with nvim-tree.lua
 - Indent lines
