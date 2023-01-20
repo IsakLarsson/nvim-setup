@@ -3,7 +3,6 @@ local saga_status, saga = pcall(require, "lspsaga")
 if not saga_status then
 	return
 end
---Hello future Isak, remember that lsp saga is broken now so pls fix it
 saga.init_lsp_saga({
 	-- keybinds for navigation in lspsaga window
 	move_in_saga = { prev = "<C-k>", next = "<C-j>" },

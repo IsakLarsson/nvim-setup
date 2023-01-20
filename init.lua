@@ -22,11 +22,7 @@ require("larsson.plugins.dashboard-nvim")
 require("larsson.plugins.gitsigns")
 require("larsson.plugins.toggleterm")
 require("leap").add_default_mappings()
-require("indent_blankline").setup({
-	-- space_char_blankline = " ",
-	-- show_current_context = true,
-	-- show_current_context_start = true,
-})
+require("indent_blankline").setup({})
 require("scrollbar").setup()
 require("colorizer").setup({
 	"*", -- Highlight all files, but customize some others.
@@ -35,7 +31,7 @@ require("colorizer").setup({
 local signature_config = {
 	-- log_path = vim.fn.expand("$home") .. "/tmp/sig.log",
 	-- debug = true,
-	hint_enable = false,
+	-- hint_enable = false, --dont remember what this does
 	-- max_width = 80,
 }
 require("lsp_signature").setup(signature_config)
