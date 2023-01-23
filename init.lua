@@ -31,7 +31,7 @@ require("colorizer").setup({
 local signature_config = {
 	-- log_path = vim.fn.expand("$home") .. "/tmp/sig.log",
 	-- debug = true,
-	-- hint_enable = false, --dont remember what this does
+	hint_enable = false, --that annoying panda
 	-- max_width = 80,
 }
 require("lsp_signature").setup(signature_config)
