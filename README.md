@@ -1,18 +1,19 @@
 # Neovim
 
-My NeoVim config, a work in progress.
+My NeoVim config, a work in progress, always changing and evolving.
 
 ## Requirements
+- Lazygit probably, don't know if it crashes if you don't have it
+- Fzf also maybe 
 
--
-
+## Features
 - Nightfly Gruvbox, and Gruvbox-flat theme
 - File navigation with nvim-tree.lua
 - Indent lines
 - Icons with nvim-web-devicons
 - Git diffs with gitsigns.nvim
 - NeoVim Lsp configuration with nvim-lspconfig and mason.nvim
-- LSPSaga LSP GUI
+- LSPSaga LSP GUI + LSP Signature hints
 - Autocompletion with nvim-cmp
 - File searching, previewing image and text files and more with telescope.nvim.
 - Syntax highlighting with nvim-treesitter
