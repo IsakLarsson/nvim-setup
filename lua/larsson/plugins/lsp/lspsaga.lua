@@ -1,5 +1,5 @@
 -- import lspsaga safely
-local saga_status, saga = pcall(require, "lspsaga")
+--[[ local saga_status, saga = pcall(require, "lspsaga")
 if not saga_status then
 	return
 end
@@ -15,4 +15,4 @@ saga.init_lsp_saga({
 	definition_action_keys = {
 		edit = "<CR>",
 	},
-})
+}) ]]

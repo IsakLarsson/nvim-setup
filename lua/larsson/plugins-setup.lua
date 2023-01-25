@@ -106,10 +106,11 @@ return packer.startup(function(use)
 			require("lspsaga").setup({
 
 				ui = {
-					border = "single",
+					border = "rounded",
 					colors = {
 						--float window normal background color
 						normal_bg = "#1a1a1a",
+						blue = "#cccccc",
 					},
 				},
 			})
@@ -148,7 +149,13 @@ return packer.startup(function(use)
 	use("nvim-lualine/lualine.nvim") -- statusline
 	use("mbbill/undotree")
 	use("debugloop/telescope-undo.nvim")
-	use("glepnir/dashboard-nvim")
+	use({
+		"goolord/alpha-nvim",
+		config = function()
+			require("alpha").setup(require("alpha.themes.dashboard").config)
+		end,
+	})
+	-- use("mhinz/vim-startify")
 	use("lukas-reineke/indent-blankline.nvim") --indent helpers
 	use("szw/vim-maximizer") -- maximizes and restores current window
 	use("petertriho/nvim-scrollbar") -- Scrollbar
