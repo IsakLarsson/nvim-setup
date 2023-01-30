@@ -27,7 +27,7 @@ require("bufferline").setup({
 -- map("n", "<C-n>", "<Cmd>BufferPrevious<CR>", opts)
 map("n", "<C-n>", "<Cmd>BufferNext<CR>", opts)
 -- Re-order to previous/next
-map("n", "<A-<>", "<Cmd>BufferMovePrevious<CR>", opts)
+map("n", "<A-<<", "<Cmd>BufferMovePrevious<CR>", opts)
 map("n", "<A->>", "<Cmd>BufferMoveNext<CR>", opts)
 -- Goto buffer in position...
 map("n", "<Space>1", "<Cmd>BufferGoto 1<CR>", opts)

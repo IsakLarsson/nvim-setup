@@ -111,6 +111,7 @@ return packer.startup(function(use)
 						--float window normal background color
 						normal_bg = "#1a1a1a",
 						blue = "#cccccc",
+						cyan = "#d8a657",
 					},
 				},
 			})

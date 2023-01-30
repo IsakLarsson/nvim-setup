@@ -19,6 +19,7 @@ keymap.set("n", "Ä", ",")
 keymap.set("n", "ä", ";")
 keymap.set("n", "U", "<C-r>") --Redo
 keymap.set("n", "Q", "@q") -- Quickly execute q macro
+keymap.set("n", "<leader>t", "%") -- Go to matching tag,bracket, whatever
 
 keymap.set("n", "<C-d>", "<C-d>zz") --Keep code centered when scrolling with ctrl d and u
 keymap.set("n", "<C-u>", "<C-u>zz")

@@ -19,6 +19,7 @@ local colors = {
 	blue = "#51afef",
 	red = "#ec5f67",
 }
+
 local config = {
 	options = {
 		-- Disable sections and component separators
