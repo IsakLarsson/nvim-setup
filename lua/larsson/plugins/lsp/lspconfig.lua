@@ -88,6 +88,11 @@ lspconfig.gopls.setup({
 	on_attach = on_attach,
 })
 
+--configure Rust analyzeer
+lspconfig.rust_analyzer.setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
 -- configure lua server (with special settings)
 lspconfig["sumneko_lua"].setup({
 	capabilities = capabilities,

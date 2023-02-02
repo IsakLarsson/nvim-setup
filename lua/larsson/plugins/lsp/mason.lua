@@ -40,6 +40,7 @@ mason_null_ls.setup({
 		"stylua", -- lua formatter
 		"eslint", -- ts/js linter
 		"gofmt",
+		"rustfmt",
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
