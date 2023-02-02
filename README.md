@@ -1,12 +1,14 @@
-# Neovim
+# I use Neovim (btw)
 
 My NeoVim config, a work in progress, always changing and evolving.
 
 ## Requirements
+
 - Lazygit probably, don't know if it crashes if you don't have it
-- Fzf also maybe 
+- Fzf also maybe
 
 ## Features
+
 - Nightfly Gruvbox, and Gruvbox-flat theme
 - File navigation with nvim-tree.lua
 - Indent lines
