@@ -9,7 +9,7 @@ My NeoVim config, a work in progress, always changing and evolving.
 
 ## Features
 
-- Nightfly Gruvbox, and Gruvbox-flat theme
+- Gruvbox-flat theme
 - File navigation with nvim-tree.lua
 - Indent lines
 - Icons with nvim-web-devicons
@@ -30,5 +30,10 @@ My NeoVim config, a work in progress, always changing and evolving.
 - Super dope lazygit and toggleterm integration
 - Harpoon plugin
 
-![Screenshot](https://i.ibb.co/5c3vBbH/Editormin.png)
-![Screenshot2](https://i.ibb.co/6NjDDP3/colortheme2.png)
+### Landing page
+
+![Screenshot](https://i.ibb.co/kMFvyqX/Landing.png)
+
+### Code
+
+![Screenshot2](https://i.ibb.co/k4S8s4B/Code.png)
