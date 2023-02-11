@@ -114,6 +114,9 @@ return packer.startup(function(use)
 						cyan = "#d8a657",
 					},
 				},
+				symbol_in_winbar = {
+					separator = "->",
+				},
 			})
 		end,
 	})

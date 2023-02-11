@@ -60,7 +60,7 @@ ins_left({
 		return msg
 	end,
 	icon = " LSP:",
-	color = { fg = colors.violet, gui = "bold" },
+	color = { fg = colors.yellow, gui = "bold" },
 })
 
 lualine.setup(config)

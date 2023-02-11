@@ -15,6 +15,9 @@ keymap.set("i", "<C-l>", "}")
 keymap.set("i", "<C-d>", "[]<ESC>i")
 keymap.set("i", "<C-f>", "]")
 
+keymap.set("n", "<leader>vs", ":so $MYVIMRC<cr>")
+keymap.set("n", "<leader>a;", "myA;<esc>`y")
+keymap.set("n", "<leader>a,", "myA,<esc>`y")
 keymap.set("n", "Ä", ",")
 keymap.set("n", "ä", ";")
 keymap.set("n", "U", "<C-r>") --Redo
@@ -26,6 +29,9 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 
 keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- Moving code up and down
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+
+keymap.set("v", "Y", "myY`y")
+keymap.set("v", "y", "myy`y")
 
 keymap.set("n", "<leader>u", ":UndotreeToggle<CR>")
 
