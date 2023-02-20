@@ -139,6 +139,18 @@ return packer.startup(function(use)
 	})
 
 	-------- UTILITY --------
+	--[[ use({
+		"folke/which-key.nvim",
+		config = function()
+			vim.o.timeout = true
+			vim.o.timeoutlen = 300
+			require("which-key").setup({
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			})
+		end,
+	}) ]]
 	use({
 		"romgrk/barbar.nvim",
 		requires = { "kyazdani42/nvim-web-devicons" },
@@ -159,11 +171,9 @@ return packer.startup(function(use)
 			require("alpha").setup(require("alpha.themes.dashboard").config)
 		end,
 	})
-	-- use("mhinz/vim-startify")
 	use("lukas-reineke/indent-blankline.nvim") --indent helpers
 	use("szw/vim-maximizer") -- maximizes and restores current window
 	use("petertriho/nvim-scrollbar") -- Scrollbar
-	use("ThePrimeagen/harpoon")
 
 	use({
 		"lewis6991/gitsigns.nvim",

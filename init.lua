@@ -35,4 +35,3 @@ local signature_config = {
 	-- max_width = 80,
 }
 require("lsp_signature").setup(signature_config)
-require("larsson.plugins.harpoon")

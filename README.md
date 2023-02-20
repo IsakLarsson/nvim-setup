@@ -28,7 +28,6 @@ My NeoVim config, a work in progress, always changing and evolving.
 - Slick landing page
 - Smooth buffer tabs navigation with barbar
 - Super dope lazygit and toggleterm integration
-- Harpoon plugin
 
 ### Landing page
 

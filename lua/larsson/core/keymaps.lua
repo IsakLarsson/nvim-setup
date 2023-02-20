@@ -15,9 +15,13 @@ keymap.set("i", "<C-l>", "}")
 keymap.set("i", "<C-d>", "[]<ESC>i")
 keymap.set("i", "<C-f>", "]")
 
+--Bindings for making Rust more ergonomic
+keymap.set("i", "ä", "->")
+keymap.set("i", "<C-s>", "&")
+
 keymap.set("n", "<leader>vs", ":so $MYVIMRC<cr>")
-keymap.set("n", "<leader>a;", "myA;<esc>`y")
-keymap.set("n", "<leader>a,", "myA,<esc>`y")
+keymap.set("n", "<leader>as", "myA;<esc>`y")
+keymap.set("n", "<leader>ac", "myA,<esc>`y")
 keymap.set("n", "Ä", ",")
 keymap.set("n", "ä", ";")
 keymap.set("n", "U", "<C-r>") --Redo
