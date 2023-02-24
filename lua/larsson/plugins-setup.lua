@@ -107,15 +107,9 @@ return packer.startup(function(use)
 
 				ui = {
 					border = "rounded",
-					colors = {
-						--float window normal background color
-						normal_bg = "#1a1a1a",
-						blue = "#cccccc",
-						cyan = "#d8a657",
-					},
 				},
 				symbol_in_winbar = {
-					separator = "->",
+					separator = " ⟩ ",
 				},
 			})
 		end,
