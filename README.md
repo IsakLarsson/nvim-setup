@@ -1,6 +1,6 @@
 # I use Neovim (btw)
 
-My NeoVim config, a work in progress, always changing and evolving.
+My Neovim config, a work in progress, always changing and evolving.
 
 ## Requirements
 
