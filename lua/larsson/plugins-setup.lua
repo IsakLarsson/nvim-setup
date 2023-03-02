@@ -48,7 +48,10 @@ return packer.startup(function(use)
 		"kylechui/nvim-surround",
 		tag = "*", -- Use for stability; omit to use `main` branch for the latest features
 		config = function()
-			require("nvim-surround").setup()
+			require("nvim-surround").setup({
+				highlight = { duration = 1000 },
+				move_cursor = false,
+			})
 		end,
 	})
 
@@ -145,6 +148,7 @@ return packer.startup(function(use)
 			})
 		end,
 	}) ]]
+	use("mattn/emmet-vim")
 	use({
 		"romgrk/barbar.nvim",
 		requires = { "kyazdani42/nvim-web-devicons" },
