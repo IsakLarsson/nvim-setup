@@ -157,7 +157,7 @@ return packer.startup(function(use)
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
-	use("rcarriga/nvim-notify")
+	-- use("rcarriga/nvim-notify")
 	use("norcalli/nvim-colorizer.lua") -- Color highlighter
 	use("kyazdani42/nvim-web-devicons") -- vs-code like icons
 	use("nvim-lualine/lualine.nvim") -- statusline
