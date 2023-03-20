@@ -58,6 +58,14 @@ return packer.startup(function(use)
 	use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
+	-- treesitter configuration
+	use({
+		"nvim-treesitter/nvim-treesitter",
+		run = function()
+			require("nvim-treesitter.install").update({ with_sync = true })
+		end,
+	})
+
 	------ MOVEMENT ------
 	use("ggandor/leap.nvim") --Motion with Leap
 
@@ -127,16 +135,8 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
-	-- treesitter configuration
-	use({
-		"nvim-treesitter/nvim-treesitter",
-		run = function()
-			require("nvim-treesitter.install").update({ with_sync = true })
-		end,
-	})
-
 	-------- UTILITY --------
-	--[[ use({
+	use({
 		"folke/which-key.nvim",
 		config = function()
 			vim.o.timeout = true
@@ -147,7 +147,7 @@ return packer.startup(function(use)
 				-- refer to the configuration section below
 			})
 		end,
-	}) ]]
+	})
 	use("mattn/emmet-vim")
 	use({
 		"romgrk/barbar.nvim",
