@@ -35,7 +35,7 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- Moving code up and down
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 
-keymap.set("v", "Y", "myY`y") --To keep cursor from jumping back to start of selection at yank
+keymap.set("v", "Y", "myY`y") --Keeps cursor in place after yanking in visual mode
 keymap.set("v", "y", "myy`y")
 
 keymap.set("n", "<leader>u", ":UndotreeToggle<CR>")
