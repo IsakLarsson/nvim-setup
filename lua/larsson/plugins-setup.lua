@@ -143,7 +143,7 @@ return packer.startup(function(use)
 			vim.o.timeoutlen = 300
 			require("which-key").setup({
 				triggers_blacklist = {
-					i = { "s", "k" },
+					i = { "s", "k", "<leader>" },
 				},
 			})
 		end,
