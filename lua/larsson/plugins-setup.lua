@@ -43,6 +43,7 @@ return packer.startup(function(use)
 			require("git-conflict").setup()
 		end,
 	})
+	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 	use("tpope/vim-fugitive")
 	use({ --Lua fork of tpope's vim-surround
 		"kylechui/nvim-surround",
@@ -136,18 +137,6 @@ return packer.startup(function(use)
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
 	-------- UTILITY --------
-	use({
-		"folke/which-key.nvim",
-		config = function()
-			vim.o.timeout = true
-			vim.o.timeoutlen = 300
-			require("which-key").setup({
-				triggers_blacklist = {
-					i = { "s", "k", "<leader>" },
-				},
-			})
-		end,
-	})
 	use("mattn/emmet-vim")
 	use({
 		"romgrk/barbar.nvim",
@@ -156,8 +145,17 @@ return packer.startup(function(use)
 	use("p00f/nvim-ts-rainbow") --For colorizing bracket pairs and such
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
-
-	-- use("rcarriga/nvim-notify")
+	use({
+		"folke/trouble.nvim",
+		requires = "nvim-tree/nvim-web-devicons",
+		config = function()
+			require("trouble").setup({
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			})
+		end,
+	})
 	use("norcalli/nvim-colorizer.lua") -- Color highlighter
 	use("kyazdani42/nvim-web-devicons") -- vs-code like icons
 	use("nvim-lualine/lualine.nvim") -- statusline
