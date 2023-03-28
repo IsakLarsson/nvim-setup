@@ -26,6 +26,8 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 	------ COLORSCHEMES ------
+	use("sainnhe/everforest")
+	use("sainnhe/gruvbox-material")
 	use({ "ellisonleao/gruvbox.nvim" })
 	use("bluz71/vim-nightfly-colors")
 	use({
@@ -126,6 +128,7 @@ return packer.startup(function(use)
 			})
 		end,
 	})
+
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 

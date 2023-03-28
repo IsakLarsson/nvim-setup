@@ -3,8 +3,11 @@ vim.g.nightflyCursorColor = true
 vim.g.nightflyWinSeparator = 2
 
 vim.g.gruvbox_flat_style = "hard"
+vim.g.everforest_background = "hard"
+vim.g.gruvbox_material_background = "hard"
 vim.g.gruvbox_colors = { bg = "black" }
 vim.o.background = "dark"
+
 -- local dark = "#1d2021"
 --[[ require("gruvbox").setup({
 
@@ -16,4 +19,4 @@ vim.o.background = "dark"
 	},
 }) ]]
 -- vim.cmd([[colorscheme gruvbox]])
-vim.cmd([[colorscheme gruvbox-flat]])
+vim.cmd([[colorscheme gruvbox-material]])
