@@ -7,12 +7,11 @@ local keymap = vim.keymap
 ---------------------
 keymap.set("n", "<leader>w", "<C-w>w")
 keymap.set("n", "<leader>sw", ":w<CR>")
-keymap.set("n", "<leader>q", ":BufferClose<CR>")
+keymap.set("n", "<leader>q", ":q<CR>")
 keymap.set("n", "<leader>Q", ":qa<CR>")
 
 keymap.set("i", "jkl", "() => {}<ESC>i") --stupid but fast as shit arrow functions
 keymap.set("i", "sdf", "={}<ESC>i") --stupid but fast as shit = brackets while in insert
-keymap.set("i", "<C-j>", "{}<ESC>i")
 keymap.set("i", "<C-l>", "}")
 keymap.set("i", "<C-d>", "[]<ESC>i")
 keymap.set("i", "<C-f>", "]")

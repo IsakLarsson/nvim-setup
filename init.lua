@@ -36,3 +36,4 @@ local signature_config = {
 }
 require("lsp_signature").setup(signature_config)
 require("larsson.plugins.trouble")
+vim.g.user_emmet_leader_key = "<C-J>"

@@ -21,7 +21,15 @@ end)
 
 require("bufferline").setup({
 	auto_hide = true,
+	maximum_padding = math.huge,
 	animation = false,
+	icons = {
+		diagnostics = {
+			[vim.diagnostic.severity.ERROR] = { enabled = true, icon = "" },
+			[vim.diagnostic.severity.WARN] = { enabled = true },
+		},
+		separator = { left = "▎", right = "" },
+	},
 })
 -- Move to previous/next
 -- map("n", "<C-n>", "<Cmd>BufferPrevious<CR>", opts)
