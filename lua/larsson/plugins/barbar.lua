@@ -21,7 +21,6 @@ end)
 
 require("bufferline").setup({
 	auto_hide = true,
-	maximum_padding = math.huge,
 	animation = false,
 	icons = {
 		diagnostics = {
