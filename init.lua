@@ -1,7 +1,7 @@
 -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-vim.g.user_emmet_leader_key = "<C-J>"
+vim.g.user_emmet_leader_key = "<C-l>"
 require("larsson.plugins-setup")
 require("larsson.core.options")
 require("larsson.core.keymaps")

@@ -12,7 +12,6 @@ keymap.set("n", "<leader>Q", ":qa<CR>")
 
 keymap.set("i", "jkl", "() => {}<ESC>i") --stupid but fast as shit arrow functions
 keymap.set("i", "sdf", "={}<ESC>i") --stupid but fast as shit = brackets while in insert
-keymap.set("i", "<C-l>", "}")
 keymap.set("i", "<C-d>", "[]<ESC>i")
 keymap.set("i", "<C-f>", "]")
 
