@@ -32,7 +32,7 @@ toggleterm.setup({
 		-- not natively supported but implemented in this plugin.
 		border = "curved", -- 'single' | 'double' | 'shadow' | 'curved',
 		-- like `size`, width and height can be a number or function which is passed the current terminal
-		winblend = 20,
+		winblend = 0,
 	},
 })
 
@@ -50,7 +50,7 @@ end
 vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
 
 local Terminal = require("toggleterm.terminal").Terminal
-local lazygit = Terminal:new({ direction = "float", cmd = "lazygit", hidden = true }) --For opening lazygit in floating window
+local lazygit = Terminal:new({ close_on_exit = true, direction = "float", cmd = "lazygit", hidden = true }) --For opening lazygit in floating window
 
 function Lazygit_toggle()
 	lazygit:toggle()

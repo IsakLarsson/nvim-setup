@@ -26,6 +26,7 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 	------ COLORSCHEMES ------
+	use({ "nyoom-engineering/oxocarbon.nvim" })
 	use("sainnhe/everforest")
 	use("sainnhe/gruvbox-material")
 	use({ "ellisonleao/gruvbox.nvim" })
@@ -145,6 +146,13 @@ return packer.startup(function(use)
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
 	-------- UTILITY --------
+	use({
+		"ray-x/sad.nvim",
+		requires = { "ray-x/guihua.lua", run = "cd lua/fzy && make" },
+		config = function()
+			require("sad").setup({})
+		end,
+	})
 	use("mattn/emmet-vim")
 	use({
 		"romgrk/barbar.nvim",
