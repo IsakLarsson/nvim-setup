@@ -4,7 +4,7 @@ if not status then
 	return
 end
 
-local colortheme = "gruvbox-flat"
+local colortheme = "auto"
 
 local colors = {
 	bg = "#1a1a1a",

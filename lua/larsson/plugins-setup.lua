@@ -26,7 +26,7 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 	------ COLORSCHEMES ------
-	use({ "nyoom-engineering/oxocarbon.nvim" })
+	use({ "catppuccin/nvim", as = "catppuccin" })
 	use("sainnhe/everforest")
 	use("sainnhe/gruvbox-material")
 	use({ "ellisonleao/gruvbox.nvim" })
@@ -39,6 +39,13 @@ return packer.startup(function(use)
 	use("eddyekofo94/gruvbox-flat.nvim")
 
 	------ ESSENTIALS ------
+	use({
+		"ThePrimeagen/refactoring.nvim",
+		requires = {
+			{ "nvim-lua/plenary.nvim" },
+			{ "nvim-treesitter/nvim-treesitter" },
+		},
+	})
 	use({
 		"akinsho/git-conflict.nvim",
 		tag = "*",
@@ -146,6 +153,14 @@ return packer.startup(function(use)
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
 	-------- UTILITY --------
+	use({
+		"saecki/crates.nvim",
+		event = { "BufRead Cargo.toml" },
+		requires = { { "nvim-lua/plenary.nvim" } },
+		config = function()
+			require("crates").setup()
+		end,
+	})
 	use({
 		"ray-x/sad.nvim",
 		requires = { "ray-x/guihua.lua", run = "cd lua/fzy && make" },
