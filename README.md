@@ -1,6 +1,8 @@
 # I use Neovim (btw)
 
-My Neovim config, a work in progress, always changing and evolving.
+My personal Neovim config, a work in progress, always changing and evolving.
+
+I am currently trying out a different config that is based on NvChad, find my custom files [here](https://github.com/IsakLarsson/nvchad-custom)
 
 ## Requirements
 

@@ -25,6 +25,7 @@ treesitter.setup({
 	-- ensure these language parsers are installed
 	ensure_installed = {
 		"go",
+		"python",
 		"json",
 		"javascript",
 		"typescript",

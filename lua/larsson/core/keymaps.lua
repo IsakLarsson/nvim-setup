@@ -6,7 +6,7 @@ local keymap = vim.keymap
 -- General Keymaps
 ---------------------
 keymap.set("n", "<leader>w", "<C-w>w")
-keymap.set("n", "<leader>sw", ":w<CR>")
+keymap.set("n", "<leader>sd", ":w<CR>")
 keymap.set("n", "<leader>q", ":q<CR>")
 keymap.set("n", "<leader>Q", ":qa<CR>")
 
