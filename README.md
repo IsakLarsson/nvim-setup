@@ -1,6 +1,6 @@
 # I use Neovim (btw)
 
-I no longer use this, I've since switched to NvChad as my base setup. See [my custom repo](https://github.com/IsakLarsson/nvchad-custom) for my custom setup
+### I no longer use this, I've since switched to NvChad as my base setup. See [my custom repo](https://github.com/IsakLarsson/nvchad-custom) for my custom setup
 
 My personal Neovim config, a work in progress, always changing and evolving.
 
